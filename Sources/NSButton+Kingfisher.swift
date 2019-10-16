@@ -24,7 +24,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-
+#if os(macOS)
 import AppKit
 
 // MARK: - Set Images
@@ -226,3 +226,4 @@ extension Kingfisher where Base: NSButton {
         objc_setAssociatedObject(base, &alternateImageTaskKey, task, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
 }
+#endif
